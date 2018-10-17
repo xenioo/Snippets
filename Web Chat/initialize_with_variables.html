@@ -1,0 +1,17 @@
+<html>
+<head>
+  <title>Xenioo Example</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+<script src="https://app.xenioo.com/webchatsrc/xeniooweb.js"></script>
+<script>
+    Xenioo( "YOUR_CHATBOT_KEY", 
+            {
+              variables:[  
+                  { Name: "user_name", Value: "<?= $_SESSION['user_name']; ?>" }
+              ]
+            });
+</script>
+</body>
+</html>
