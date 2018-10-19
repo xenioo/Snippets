@@ -1,0 +1,16 @@
+<html>
+<head>
+  <title>Xenioo Example</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+<script src="https://app.xenioo.com/webchatsrc/xenioowebchat.js"></script>
+<script>
+    Xenioo("YOUR_CHATBOT_KEY");
+    
+    function resetUserConversation() {
+      document.cookie = 'xenioo-YOUR_CHATBOT_KEY=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+    }
+</script>
+</body>
+</html>
