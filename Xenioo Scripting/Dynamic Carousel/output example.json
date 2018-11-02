@@ -1,0 +1,30 @@
+{
+   "items":[
+      {
+         "type":"buttonscard",
+         "title":"My Product Name",
+         "subtitle":"This is awesome",
+         "image_url":"https://someserver/someimage.png",
+         "buttons":[
+            {
+               "type":"postback",
+               "payload": "my_product_id",
+               "text":"Compra"
+            }
+         ]
+      },
+      {
+         "type":"buttonscard",
+         "title":"My 2nd Product Name",
+         "subtitle":"This is also awesome",
+         "image_url":"https://someserver/someimage_2.png",
+         "buttons":[
+            {
+               "type":"postback",
+               "payload":"my_product_id_2",
+               "text":"Compra"
+            }
+         ]
+      }
+   ]
+}
