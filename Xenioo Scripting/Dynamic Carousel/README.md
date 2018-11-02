@@ -1,5 +1,4 @@
-# Snippets
-This repository contains various Xenioo scripting examples that can help you building your chatbot.
+# Dynamic Carousel Example
+The example you find here can help you understand how to use a Cloud Scripting action to build a Dynamic Carousel Variable to be used in a dynamic chat.
 
-# <a href='https://github.com/xenioo/Snippets/tree/master/Web%20Chat'>Web Chat</a>
-This folder contains various client side initialization and configuration scripts.
+The .JS file contains a script that can be used directly in a Xenioo Cloud Scripting block while the JSON file contains an example of fully functional Dynamic Carousel JSON input.
