@@ -1,0 +1,99 @@
+
+<html>
+  <head>
+    <title>Xenioo - Stripe TEST Payment Page</title>
+    <script src="https://checkout.stripe.com/checkout.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <button style="display:none" id="customButton">Purchase</button>
+
+
+    <script>
+    
+        var cid = getQueryString()[ "cid" ];
+        var token_data = null;
+
+        var handler = StripeCheckout.configure({
+          key: '<TEST_KEY_STRIPE>',
+          image: 'https://app.xenioo.com/assets/images/xenioo-logo-sm.png',
+          locale: 'auto',
+          token: function(token) {
+              token_data = token;
+          },
+          closed: function(){
+              //Canceled?
+              if( token_data == null ){
+                  window.close();
+                  return;
+              }
+              
+              //We call the broadcast pusing the token information
+              //We supply the CID/UserId field as a mean to uniquely identify the broadcast target
+              var data = {
+                  audience_filters:'user_id',
+                  audience_criteria:'equals',
+                  audience_values:cid,
+                  set_variables:"stripe_data;",
+                  set_variables_values:JSON.stringify( token_data ) + ";"
+              };
+              
+              $.ajax({
+                type: "POST",
+                url: "<XENIOO_BROADCAST_URL>",
+                data: JSON.stringify( data ),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function(){
+                    window.close();
+                }
+              });
+              
+          }
+        });
+
+        $('#customButton').on('click', function(e) {
+          // Open Checkout with further options
+          handler.open({
+            name: 'Xenioo Demo',
+            description: 'Buying Awesome Stuff',
+            amount: 100,
+            currency:'eur'
+          });
+          e.preventDefault();
+        });
+
+        $(window).load(function() {
+
+          //No cid. no play
+          if( !cid ||
+              cid.length == 0 )
+              window.location.href = "https://www.xenioo.com";
+        
+          $('#customButton').trigger('click');
+        });
+
+        // Close Checkout on page navigation
+        $(window).on('popstate', function() {
+          handler.close();
+        });
+        
+        function getQueryString(){
+            var vars = [], hash;
+            var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+            for(var i = 0; i < hashes.length; i++)
+            {
+                hash = hashes[i].split('=');
+                vars.push(hash[0]);
+                vars[hash[0]] = hash[1];
+            }
+            return vars;
+        }
+
+
+    </script>
+  
+  </body>
+</html>
+
+
