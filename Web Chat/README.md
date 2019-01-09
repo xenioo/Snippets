@@ -13,4 +13,4 @@ You can use this example if your chatbot needs to activate only when the page is
 Each Xenioo chatbot use local cookie to track users and recognize them every time they land on the site. If you need to reset the user conversation, you can simply delete the local cookie associated with the bot. Keep in mind that resetting that cookie means that the next time the user will reload the page it will be counted as a new user in the conversation history.
 
 # user_ip_informations
-In this example page we're using <a href='http://geobytes.com/iplocator/'>GeoBytes</a> free service to detect the current user ip and pass to our chatbot the detected country and location. The chatbot will be activated automatically as the ip check is done.
+In this example page we're using <a href='http://geobytes.com/iplocator/'>GeoBytes</a> free service to detect the current user ip and pass to our chatbot the detected country and location. The chatbot will be activated automatically as the ip check is done. This sample can be easily adapted to use different kind of ip-location services.
