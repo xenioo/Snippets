@@ -14,3 +14,6 @@ Each Xenioo chatbot use local cookie to track users and recognize them every tim
 
 # user_ip_informations
 In this example page we're using <a href='http://geobytes.com/iplocator/'>GeoBytes</a> free service to detect the current user ip and pass to our chatbot the detected country and location. The chatbot will be activated automatically as the ip check is done. This sample can be easily adapted to use different kind of ip-location services.
+
+# home_page_different_activation
+Activate Xenioo chatbot differently, depending on your current web page. In the example, the chatbot will automatically open in full, depending on Xenioo configuration, on the homepage while staying closed on any other page.
