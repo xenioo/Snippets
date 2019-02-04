@@ -31,4 +31,5 @@ Just replace "title", "image-url", "subtitle" and "payload" with the correct val
 ```
 
 The **"payload"** must be the API Token you'll find in the Behavour settings of your Xenioo chatbot.
-![alt text](http://)
+
+![alt text](https://github.com/xenioo/Snippets/blob/master/Chatbots/Facebook%20Ads/Xenioo%20Behaviour%20API%20Token.png)
