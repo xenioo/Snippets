@@ -2,8 +2,6 @@
 
 Just replace "title", "image-url", "subtitle" and "payload" with the correct values and you're ready to go.
 
-The **"payload"** must be the API Token you'll find in the Behavour settings of your Xenioo chatbot.
-
 ```javascript
 {
     "message": {
@@ -31,3 +29,6 @@ The **"payload"** must be the API Token you'll find in the Behavour settings of 
     "user_edit": true
 }
 ```
+
+The **"payload"** must be the API Token you'll find in the Behavour settings of your Xenioo chatbot.
+![alt text](http://)
