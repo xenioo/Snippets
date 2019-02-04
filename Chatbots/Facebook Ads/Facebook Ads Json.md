@@ -2,6 +2,8 @@
 
 Just replace "title", "image-url", "subtitle" and "payload" with the correct values and you're ready to go.
 
+It is important to put :: as the last characters of the "payoload".
+
 ```javascript
 {
     "message": {
@@ -18,7 +20,7 @@ Just replace "title", "image-url", "subtitle" and "payload" with the correct val
                             {
                                 "type": "postback",
                                 "title": "CALL TO ACTION",
-                                "payload": "**<PUT HERE THE BEHAVIOUR API TOKEN>**"
+                                "payload": "<PUT HERE THE BEHAVIOUR API TOKEN>::"
                             }
                         ]
                     }
