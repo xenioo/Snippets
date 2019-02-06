@@ -2,10 +2,6 @@
 
 This folder contains various javascript examples related to the Xenioo Web Chat Channel initialization, configuration and interaction with your page. Check the list below for a brief explanation of each example
 
-# Web Chat Callback Events
-This page shows the events fired by the web chat widget. You can hook up to any of those events using javascript.
-See the [live demo here](https://www.xenioo.com/showcase/5/) and download the source code from [here](https://github.com/xenioo/Snippets/blob/master/Web%20Chat/WebChatCallbackEvents.html)
-
 # callback_events_example
 This example shows all of the different callback function you can attach to the Xenioo web chat object instance. You can access anything form basic chat objects to user interactions. You can see a [live demo here](https://www.xenioo.com/showcase/5/).
 
