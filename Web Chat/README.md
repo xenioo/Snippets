@@ -3,7 +3,7 @@
 This folder contains various javascript examples related to the Xenioo Web Chat Channel initialization, configuration and interaction with your page. Check the list below for a brief explanation of each example
 
 # callback_events_example
-This example shows all of the different callback function you can attach to the Xenioo web chat object instance. You can access anything form basic chat objects to user interactions.
+This example shows all of the different callback function you can attach to the Xenioo web chat object instance. You can access anything form basic chat objects to user interactions. You can see a [live demo here](https://www.xenioo.com/showcase/5/).
 
 # initialize_with_variables
 This simple initialization file contains a small variation of the standard script that will initialize your chatbot conversation by injecting a variable. As the new conversation starts, the variable is automatically valued and can be used right away. If the injected variable does not exist, it will be created.  

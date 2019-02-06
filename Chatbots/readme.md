@@ -10,4 +10,4 @@ This chatbot shows how to use the API action in order to create a dynamic reply 
 * **API Action:** make a RESTful call to Sheetlabs (https://sheetlabs.com) to get data used for dynamic content
 * **Cloud Script Action:** javascript code to generate the dynamic reply starting from json response stored in a variable
 
-## [Json to use for Facebook Ads](https://github.com/xenioo/Snippets/blob/master/Chatbots/Facebook%20Ads%20Json.md)
+## [Facebook Ads](https://github.com/xenioo/Snippets/tree/master/Chatbots/Facebook%20Ads)
