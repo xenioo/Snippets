@@ -6,7 +6,7 @@ The **cloud script.js** file contains a script that can be used directly in a Xe
 |button type|description|
 |-|-|
 |postback|A standard post-back button. A postback button will send back the payload value to Xenioo and ultimately to your chatbot. The payload value can be used in you flow to redirect and manage conversation based on user choice.|
-|web_url|This button will redirect the user to the url specified in the payload value. This type of button also support different "webview_height_ratio" values, as shown in the tabel below|
+|url|This button will redirect the user to the url specified in the payload value. This type of button also support different "webview_height_ratio" values, as shown in the tabel below|
 |element_share|This button will display a fixed share icon that will let you user share the card contents outside of the chatbot. This is currently only supported by the Facebook channel|
 
 Each button has different properties that can help you define layout and behaviour.
