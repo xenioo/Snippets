@@ -9,6 +9,15 @@ The **cloud script.js** file contains a script that can be used directly in a Xe
 |web_url|This button will redirect the user to the url specified in the payload value. This type of button also support different "webview_height_ratio" values, as shown in the tabel below|
 |element_share|This button will display a fixed share icon that will let you user share the card contents outside of the chatbot. This is currently only supported by the Facebook channel|
 
+Each button has different properties that can help you define layout and behaviour.
+
+|property|description|
+|-|-|
+|text|The text of the button. Depending on the platorm a button text may be truncated if too long.|
+|url|Target url of the button. This property is used only if the button type is **web_url**|
+|view_size|Aspect of the view size (see below). This property is used only if the button type is **web_url**|
+|type|Type of the button as described above.|
+
 When using web_url type button in Facebook channel, you can assign to the webview_height_ratio property the following values:
 
 |value|description
