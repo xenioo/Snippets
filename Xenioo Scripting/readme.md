@@ -8,13 +8,13 @@ In addition to standard JavaScript functions and objects, Xenioo's cloud scripti
 This method will return the current value of a specified variable. If the variable does not exist, an empty string is returned.
 ```javascript
 conversation.GetVariableValue( variablename );
-```
+```  
 
 **GetVariable**  
 This method will return the current variable object instance of a given variable name. If the variable does not exist, an empty instance is returned. The returned instance will expose a Value and a Name field, both strings.
 ```javascript
 conversation.GetVariable( variablename );
-```
+```  
 
 
 **AddReplyPart**  
