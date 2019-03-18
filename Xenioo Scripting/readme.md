@@ -39,6 +39,13 @@ The **setmode** parameter defines the mode used to update the target variable. Y
 |8|RemoveString. The given value will be removed from the current variable value|
 |9|ClearValue. The current value of the variable will be set to an empty string value|
 ---
+**GoTo**  
+This method will redirect the conversation to the behaviour specified in targetbehaviour and the interaction specified in targetinteraction. If targetinteraction is empty or null, the convesation will be redirected to the start interaction of targetbehaviour.
+Conversation will be redirected as soon as the script action completes. No additional operations or actions will be executed, even if child of the current scripting action.
+```javascript
+conversation.GoTo( targetbehaviour, targetinteraction );
+```  
+---
 **AddReplyPart**  
 This method will add a new reply part to the current conversation block. You can use this method to add new text or advanced controls to the current conversation. The added parts are volatile and will not become part of the runtime chatbot build design.
 This method has multiple overloads that can be used to further define you action.
