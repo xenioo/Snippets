@@ -39,6 +39,23 @@ The **setmode** parameter defines the mode used to update the target variable. Y
 |8|RemoveString. The given value will be removed from the current variable value|
 |9|ClearValue. The current value of the variable will be set to an empty string value|
 ---
+**SetTag**  
+This method will create a new tag and attach it to the current conversation.
+```javascript
+conversation.SetTag( tagname );
+```  
+---
+**DropTag**  
+This method will drop a specified tag from the current conversation. No error is returned if the tag does not exist.
+```javascript
+conversation.DropTag( tagname );
+```  
+**HasTag**
+This method will check the existance of specific tag and return true if found otherwise false.
+```javascript
+conversation.HasTag( tagname );
+```  
+---
 **GoTo**  
 This method will redirect the conversation to the behaviour specified in targetbehaviour and the interaction specified in targetinteraction. If targetinteraction is empty or null, the convesation will be redirected to the start interaction of targetbehaviour.
 Conversation will be redirected as soon as the script action completes. No additional operations or actions will be executed, even if child of the current scripting action.
@@ -73,5 +90,12 @@ conversation.AddReplyPart( text );
 conversation.AddReplyPart( type, text, command );
 conversation.AddReplyPart( type, text, command, commandvariable );
 conversation.AddReplyPart( type, text, command, commandvariable, targetbehaviour, targetinteraction );
+```
+---
+**XmlToJSon**  
+This method will try to parse a given XML source text and transform it into a valid JSON representation. The JSON representation can then be transformed to an ojbect instance using standard JavaScript parse method.
+
+```javascript
+conversation.XmlToJSon( xmlsource );
 ```
 ---
