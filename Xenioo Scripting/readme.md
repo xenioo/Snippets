@@ -46,6 +46,24 @@ Conversation will be redirected as soon as the script action completes. No addit
 conversation.GoTo( targetbehaviour, targetinteraction );
 ```  
 ---
+**GetNextRandom**  
+This method can generate a random integer number randing from min to max value (both included).
+```javascript
+conversation.GetNextRandom( minvalue, maxvalue );
+```  
+---
+**Log**  
+This method will log a user text to the current chat execution diagram. The log will be displayed as system, following the standard script action logging.
+```javascript
+conversation.Log( text );
+```  
+---
+**LogIssue**  
+This method will log an issue text to the current chat execution diagram. The log will be displayed as system, following the standard script action logging. An issue text is displayed with an alert and a red color accent.
+```javascript
+conversation.Log( text );
+```  
+---
 **AddReplyPart**  
 This method will add a new reply part to the current conversation block. You can use this method to add new text or advanced controls to the current conversation. The added parts are volatile and will not become part of the runtime chatbot build design.
 This method has multiple overloads that can be used to further define you action.
