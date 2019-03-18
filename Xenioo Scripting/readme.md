@@ -90,7 +90,19 @@ conversation.AddReplyPart( text );
 conversation.AddReplyPart( type, text, command );
 conversation.AddReplyPart( type, text, command, commandvariable );
 conversation.AddReplyPart( type, text, command, commandvariable, targetbehaviour, targetinteraction );
-```
+```  
+The **type** parameter defines the tipe of chat content that the method should add to the current conversation. Refer to the table below for a list of all types supported bu this method.
+
+|Type value|Content Type|
+|-----------------|-----------------|
+|0|Text
+|1|Quick Button
+|3|Image
+|6|Question (Blocking)
+|9|Video
+|10|Audio
+|11|File
+|17|Url
 ---
 **XmlToJSon**  
 This method will try to parse a given XML source text and transform it into a valid JSON representation. The JSON representation can then be transformed to an ojbect instance using standard JavaScript parse method.
