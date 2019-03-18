@@ -9,14 +9,13 @@ This method will return the current value of a specified variable. If the variab
 ```javascript
 conversation.GetVariableValue( variablename );
 ```  
-
+  
 **GetVariable**  
 This method will return the current variable object instance of a given variable name. If the variable does not exist, an empty instance is returned. The returned instance will expose a Value and a Name field, both strings.
 ```javascript
 conversation.GetVariable( variablename );
 ```  
-
-
+  
 **AddReplyPart**  
 This method will add a new reply part to the current conversation block. You can use this method to add new text or advanced controls to the current conversation. The added parts are volatile and will not become part of the runtime chatbot build design.
 This method has multiple overloads that can be used to further define you action.
