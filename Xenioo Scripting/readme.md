@@ -9,6 +9,8 @@ This method will add a new reply part to the current conversation block. You can
 This method has multiple overloads that can be used to further define you action.
 
 ```javascript
-conversation.AddReplyPart( "Hello there!" );
-
+conversation.AddReplyPart( parttext );
+conversation.AddReplyPart( parttype, parttext, partcommand );
+conversation.AddReplyPart( parttype, parttext, partcommand, partcommandvariable );
+conversation.AddReplyPart( parttype, parttext, partcommand, partcommandvariable, targetbehaviour, targetinteraction );
 ```
