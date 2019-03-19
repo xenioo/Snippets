@@ -4,19 +4,19 @@ Here you can find some examples of how Xenioo Cloud scripting can be used to cre
 
 In addition to standard JavaScript functions and objects, Xenioo's cloud scripting also provides the global conversation object, which supports the following methods.  
 
-**GetVariableValue**  
+## GetVariableValue
 This method will return the current value of a specified variable. If the variable does not exist, an empty string is returned.
 ```javascript
 conversation.GetVariableValue( variablename );
 ```  
 ---
-**GetVariable**  
+## GetVariable  
 This method will return the current variable object instance of a given variable name. If the variable does not exist, an empty instance is returned. The returned instance will expose a Value and a Name field, both strings.
 ```javascript
 conversation.GetVariable( variablename );
 ```  
 ---
-**SetVariable**  
+## SetVariable  
 This method will update the value of a variable with a given name. Multiple overloads are available for additional call details.
 ```javascript
 conversation.SetVariable( variablename, variablevalue );
@@ -39,49 +39,49 @@ The **setmode** parameter defines the mode used to update the target variable. Y
 |8|RemoveString. The given value will be removed from the current variable value|
 |9|ClearValue. The current value of the variable will be set to an empty string value|
 ---
-**SetTag**  
+## SetTag  
 This method will create a new tag and attach it to the current conversation.
 ```javascript
 conversation.SetTag( tagname );
 ```  
 ---
-**DropTag**  
+## DropTag  
 This method will drop a specified tag from the current conversation. No error is returned if the tag does not exist.
 ```javascript
 conversation.DropTag( tagname );
 ```  
-**HasTag**
+## HasTag
 This method will check the existance of specific tag and return true if found otherwise false.
 ```javascript
 conversation.HasTag( tagname );
 ```  
 ---
-**GoTo**  
+## GoTo  
 This method will redirect the conversation to the behaviour specified in targetbehaviour and the interaction specified in targetinteraction. If targetinteraction is empty or null, the convesation will be redirected to the start interaction of targetbehaviour.
 Conversation will be redirected as soon as the script action completes. No additional operations or actions will be executed, even if child of the current scripting action.
 ```javascript
 conversation.GoTo( targetbehaviour, targetinteraction );
 ```  
 ---
-**GetNextRandom**  
+## GetNextRandom  
 This method can generate a random integer number randing from min to max value (both included).
 ```javascript
 conversation.GetNextRandom( minvalue, maxvalue );
 ```  
 ---
-**Log**  
+## Log  
 This method will log a user text to the current chat execution diagram. The log will be displayed as system, following the standard script action logging.
 ```javascript
 conversation.Log( text );
 ```  
 ---
-**LogIssue**  
+## LogIssue  
 This method will log an issue text to the current chat execution diagram. The log will be displayed as system, following the standard script action logging. An issue text is displayed with an alert and a red color accent.
 ```javascript
 conversation.Log( text );
 ```  
 ---
-**AddReplyPart**  
+## AddReplyPart  
 This method will add a new reply part to the current conversation block. You can use this method to add new text or advanced controls to the current conversation. The added parts are volatile and will not become part of the runtime chatbot build design.
 This method has multiple overloads that can be used to further define you action.
 
@@ -104,7 +104,7 @@ The **type** parameter defines the tipe of chat content that the method should a
 |11|File
 |17|Url
 ---
-**XmlToJSon**  
+## XmlToJSon  
 This method will try to parse a given XML source text and transform it into a valid JSON representation. The JSON representation can then be transformed to an ojbect instance using standard JavaScript parse method.
 
 ```javascript
