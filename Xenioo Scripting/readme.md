@@ -4,7 +4,7 @@ Here you can find some examples of how Xenioo Cloud scripting can be used to cre
 
 In addition to standard JavaScript functions and objects, Xenioo's cloud scripting also provides the global conversation object, which supports the following methods.  
 
-## GetVariableValue
+## GetVariable
 This method will return the current value of a specified variable. If the variable does not exist, an empty string is returned.
 ```javascript
 conversation.GetVariableValue( variablename );
