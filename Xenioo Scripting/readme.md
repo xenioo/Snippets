@@ -10,12 +10,6 @@ This method will return the current value of a specified variable. If the variab
 conversation.GetVariableValue( variablename );
 ```  
 ---
-## GetVariable  
-This method will return the current variable object instance of a given variable name. If the variable does not exist, an empty instance is returned. The returned instance will expose a Value and a Name field, both strings.
-```javascript
-conversation.GetVariable( variablename );
-```  
----
 ## SetVariable  
 This method will update the value of a variable with a given name. Multiple overloads are available for additional call details.
 ```javascript
