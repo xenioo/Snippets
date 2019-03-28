@@ -7,7 +7,7 @@ In addition to standard JavaScript functions and objects, Xenioo's cloud scripti
 ## GetVariable
 This method will return the current value of a specified variable. If the variable does not exist, an empty string is returned.
 ```javascript
-conversation.GetVariableValue( variablename );
+conversation.GetVariable( variablename );
 ```  
 ---
 ## SetVariable  
