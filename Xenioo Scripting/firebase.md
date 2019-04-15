@@ -1,6 +1,12 @@
 # Firebase Connection
 The Firebase connection object represent a valid connection instance to a configured Firebase cloud database. Once the database instance has been associated with an object the following methods can be used.
 
+## Connect
+Returns a virtual Firebase database instance that can be further used to manipulate remote data. You can find here all methods supprted by the returned connection.
+```javascript
+var database = conversation.Connect( accountjson, projectid, databasename );
+```  
+---
 ## Create
 This method will insert a new object in the specified collection. The collection must exist. The object can be expressed in standard notation like { a = "hello" }. Xenioo will translate it to the correct Firebase document format.
 ```javascript
