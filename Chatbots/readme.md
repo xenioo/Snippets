@@ -3,9 +3,13 @@
 Here you can find a list of snippets and chatbots backups that you can restore back into your Xenioo account for testing and experimenting.
 
 ## [Dynamic Data Colors](https://github.com/xenioo/Snippets/tree/master/Chatbots/Dynamic%20Data)
-## [Dynamic Data Colors with Firebase Integration](https://github.com/xenioo/Snippets/tree/master/Chatbots/Firebase%20Integration)
 
 This chatbot shows how to use the API action in order to create a dynamic reply from the chatbot.
+
+## [Firebase Integration](https://github.com/xenioo/Snippets/tree/master/Chatbots/Firebase%20Integration)
+
+This chatbot shows how to integrate Firebase with Xenioo to build dynamic chatbots.
+
 
 ## [XML Soap Service](https://github.com/xenioo/Snippets/tree/master/Chatbots/XML%20SOAP)
 
