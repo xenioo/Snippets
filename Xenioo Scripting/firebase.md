@@ -28,12 +28,12 @@ database.Update( collection, documentid, object );
 ## List  
 This method will return a list of all the objects that are currently stored in the specified collection.
 ```javascript
-database.List( collection );
+var arrlist = database.List( collection );
 ```  
 ---
 ## Get  
 This method will return a single object instance from the database corresponding to the id specified in documentid.
 ```javascript
-database.Get( collection, documentid );
+var obj = database.Get( collection, documentid );
 ```  
 ---
