@@ -18,3 +18,7 @@ This chatbot shows how to use the usual API action to interact and retrieve data
 ## [Facebook Ads](https://github.com/xenioo/Snippets/tree/master/Chatbots/Facebook%20Ads)
 
 This example illustrates how to connect a specific Xenioo behaviour of your chatbot to a Facebook Advertising button. By connecting directly to a specific behaviour, you can have your Facebook Advertising start a very specific section of your chatbot when interacted.
+
+```
+If you want to just download .xenioo chatbots instead of pulling the repository remember to first click on the .xenioo file then select "Raw" and then save the page content to a local file.
+```
