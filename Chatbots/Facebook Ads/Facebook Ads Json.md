@@ -2,7 +2,7 @@
 
 Just replace "title", "image-url", "subtitle" and "payload" with the correct values and you're ready to go.
 
-It is important to put :: as the last characters of the "payoload".
+It is important to put :: as the last characters of the "payload".
 
 ```javascript
 {
