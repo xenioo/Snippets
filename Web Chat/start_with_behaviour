@@ -1,0 +1,15 @@
+<html>
+<head>
+  <title>Xenioo Example</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+<script src="https://static.xenioo.com/webchat/xenioowebchat.js"></script>
+<script>
+    Xenioo( "YOUR_CHATBOT_KEY", 
+            {
+              behaviour: "YOUR_BEHAVIOUR_API_TOKEN"
+            });
+</script>
+</body>
+</html>
