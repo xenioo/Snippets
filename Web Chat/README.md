@@ -21,3 +21,6 @@ In this example page we're using <a href='http://geobytes.com/iplocator/'>GeoByt
 # home_page_different_activation
 Activate Xenioo chatbot differently, depending on your current web page. In the example, the chatbot will automatically open in full, depending on Xenioo configuration, on the homepage while staying closed on any other page.
 
+# start_with_behaviour
+Activate Xenioo chatbot starting from a specific behaviour. Pass the behaviour API TOKEN you can find in the Behaviour properties panel into the flow designer.
+
