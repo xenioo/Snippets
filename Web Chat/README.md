@@ -2,6 +2,10 @@
 
 This folder contains various javascript examples related to the Xenioo Web Chat Channel initialization, configuration and interaction with your page. Check the list below for a brief explanation of each example
 
+# formatting text
+Web chat widget allows you to format any text coming out from any Content Action (Text Action, Carousel, ...).  
+[See format specification](https://github.com/xenioo/Snippets/blob/master/Web%20Chat/Formatting%20text.md)
+
 # callback_events_example
 This example shows all of the different callback function you can attach to the Xenioo web chat object instance. You can access anything form basic chat objects to user interactions. You can see a [live demo here](https://www.xenioo.com/showcase/5/).
 
