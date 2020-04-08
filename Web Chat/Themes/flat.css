@@ -1,0 +1,73 @@
+/*
+  Xenioo
+  Flat Theme Style Sheet
+  
+  Upload this custom style sheet to your chatbot using Web Publishing Settings.
+  Remember to choose "Load Both Xenioo and Custom Style Sheets" under Style Sheet Mode.
+
+*/
+
+#xenioo-chat-widget-button{
+    background-color: rgb(166, 55, 43) !important;
+    background-image: url(https://app02.xenioo.com/webchatsrc/xenioo-avatar-tran.png) !important;
+    border-radius: 4px !important;
+    border: 1px solid #a1352a;
+    clip-path: polygon(76% 0, 100% 50%, 76% 100%, 25% 100%, 0 52%, 24% 0);
+}
+
+.x-avatar-img{
+    top: 1px !important;
+    left: 1px !important;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius:0px  !important;
+}
+
+#xenioo-conversation{
+	border-radius: 0px !important;
+}
+
+.x-image-element{
+	border-radius:0px !important;
+box-shadow: 0 4px 6px 0 rgba(0,0,0,.2);
+
+}
+
+#xenioo-conversation-body{
+    background-color: #f7f7f7 !important;
+    top: 0px !important;
+    padding-top: 10px !important;
+	margin-bottom: 8px !important;
+}
+
+#xenioo-conversation-header{
+	display:none;
+}
+
+.x-button{
+	width: 100% !important;
+	background-color: white !important;
+    	border-radius: 0px !important;
+	box-shadow: 0 4px 6px 0 rgba(0,0,0,.2);
+font-weight: 500;
+}
+
+.x-bubble-text{
+	background-color: #ffffff !important;
+    border-radius: 0px !important;
+    box-shadow: 0 4px 6px 0 rgba(0,0,0,.2);
+}
+
+.x-message-time{
+	display: none;
+}
+
+.u-bubble-text{
+	border-radius: 0px !important;
+	background-color: #e74c3c !important;
+
+}
+
+.xenioo-conversation-composer{
+	background-color: rgb(182, 60, 47) !important;
+}

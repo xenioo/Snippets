@@ -1,0 +1,88 @@
+/*
+  Xenioo
+  Dark Theme Style Sheet with detached chat box
+  
+  Upload this custom style sheet to your chatbot using Web Publishing Settings.
+  Remember to choose "Load Both Xenioo and Custom Style Sheets" under Style Sheet Mode.
+
+*/
+#xenioo-chat-widget-button{
+background-color: rgb(249, 0, 77) !important;
+    background-image: url(https://app02.xenioo.com/webchatsrc/xenioo-avatar-tran.png) !important;
+    border-radius: 25px !important;
+    border: 1px solid #888888;
+}
+
+#xenioo-conversation{
+  box-shadow:none !important;
+}
+
+
+#xenioo-conversation-header-avatar-container{
+  display:none;
+}
+
+#xenioo-conversation-body{
+  margin-bottom:15px !important;
+  border-radius:15px;
+  box-shadow: 0 4px 3px 0 rgba(0,0,0,.69);
+}
+
+#xenioo-conversation-composer{
+  border-radius:15px;
+  box-shadow:none !important;
+  bottom:6px !important;
+}
+
+.xenioo-conversation-composer-container{
+  border-radius:15px;
+  box-shadow: 0 4px 3px 0 rgba(0,0,0,.69);
+}
+
+#xenioo-conversation-header{
+  display:none;
+}
+
+#xenioo-conversation-header-title-container{
+  width:65% !important;
+}
+
+.u-bubble-text{
+  background-color:#f9004d !important;
+}
+
+#xenioo-conversation .xenioo-conversation-header, #xenioo-floating-context .xenioo-floating-context-header, #xenioo-floating-extra-content .xenioo-floating-context-header{
+  background-color: #2b2b2b !important;
+}
+
+#xenioo-conversation .xenioo-conversation-body, #xenioo-floating-context .xenioo-floating-context-body{
+  background-color: #2b2b2b !important;
+}
+
+#xenioo-conversation .xenioo-conversation-body .x-bubble-text, .xenioo-conversation-custom .x-bubble-text{
+  background-color:transparent !important;
+  color:white !important;
+}
+
+#xenioo-conversation .xenioo-conversation-body .x-button, .xenioo-conversation-custom .x-button{
+  background-color: #f9004d !important;
+  color: #ebeaef !important;
+  border: solid 1px #f9004d !important;
+}
+
+.x-message-time{
+  margin-left:8px !important;
+  color:#656565 !important;
+}
+
+#xenioo-conversation .xenioo-conversation-composer .xenioo-conversation-composer-container{
+  background-color: #2b2b2b !important;
+}
+
+#xenioo-conversation-composer-sendbutton button{
+	opacity:1 !important;
+}
+
+#xenioo-conversation-composer-sendbutton button svg path{
+   fill: #f77822;
+}

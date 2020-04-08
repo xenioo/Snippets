@@ -1,0 +1,49 @@
+/*
+  Xenioo
+  Dark Theme Style Sheet
+  
+  Upload this custom style sheet to your chatbot using Web Publishing Settings.
+  Remember to choose "Load Both Xenioo and Custom Style Sheets" under Style Sheet Mode.
+
+*/
+.xenioo-landing-chat{
+    max-width: 549px;
+    max-height: 629px;
+    left: 350px;
+    top: 211px;
+}
+
+.x-avatar-img{
+	background-image: url(./skin_avatar.png)  !important;
+	width: 48px  !important;
+	height: 48px  !important;
+}
+
+.xenioo-conversation{
+    right: 0px !important;
+}
+
+.xenioo-conversation-composer{
+	    background-color: rgb(54, 43, 46) !important;
+	width:unset !important;
+}
+
+.x-button{
+	color: #d08172 !important;
+    border: solid 1px #ecae9f !important;
+    background-color: #f9f0ff !important;
+}
+
+.x-bubble-text{
+    font-family: poppins, sans sans-serif !important;
+    font-size: 14px !important;
+    background-color: #f9f0ff !important;
+    color: #c6646b !important;
+}
+
+.u-bubble-text{
+    font-family: poppins, sans sans-serif !important;
+    font-size: 14px !important;
+    background-color: #f9f0ff !important;
+    color: #362b2e !important;
+}

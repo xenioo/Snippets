@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <base target="_blank">
+    <title>Xenioo Chatbot - Powered by Xenioo</title>
+    <link rel="shortcut icon" href="https://static.xenioo.com/webchat/favicon.ico">
+</head>
+<body>
+    <div class="xenioo-landing-chat" id="xenioo-landing-chat"></div>
+<div class="xenioo-demo-area" id="xenioo-demo-area"></div>
+    <script>
+        
+        var getParams = function (url) {
+        	var params = {};
+	        var parser = document.createElement('a');
+	        parser.href = url;
+        	var query = parser.search.substring(1);
+	        var vars = query.split('&');
+	        for (var i = 0; i < vars.length; i++) {
+        	  var pair = vars[i].split('=');
+	          params[pair[0]] = decodeURIComponent(pair[1]);
+        	}
+	        return params;
+	      };
+      
+	      var params = getParams(window.location.href);
+        var back = "";
+        var style = "";
+      
+        if( params[ "back" ] ){
+            document.body.style.background = "Url('" + params[ "back" ] + ".png')";
+            document.body.style.backgroundSize = "cover";
+        }
+          
+        if( params[ "style" ] )
+            style = "./" + params[ "style" ] + ".css";
+
+        var el = document.createElement('script');
+            el.setAttribute('data-id', 'xenioo');
+            el.setAttribute('data-node', "app02");
+            el.setAttribute('src', 'https://static.xenioo.com/webchat/xenioowebchat.js');
+            el.onload=loadXenioo;
+            document.body.appendChild(el);
+
+        function loadXenioo() {
+            xenioowebchat.StartAsLanding( "b193d1e2-489d-424f-9fc0-63cf047a4bed", 'xenioo-landing-chat', {
+              additionalstyle: style
+            });
+        }
+    </script>
+</body>
+</html>

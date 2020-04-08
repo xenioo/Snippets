@@ -1,0 +1,121 @@
+/*
+  Xenioo
+  Seaside Theme Style Sheet
+  
+  Upload this custom style sheet to your chatbot using Web Publishing Settings.
+  Remember to choose "Load Both Xenioo and Custom Style Sheets" under Style Sheet Mode.
+
+*/
+    @keyframes flipdiv
+    {
+    	from {transform:rotateY(0deg);}
+    	to {transform:rotateY(360deg);}
+    }
+
+    @-moz-keyframes flipdiv/* Firefox */
+    {
+    	from {-moz-transform:rotateY(0deg);}
+    	to {-moz-transform:rotateY(360deg);}
+    }
+
+    @-webkit-keyframes flipdiv/* Opera, Safari, Chrome */
+    {
+    	from {-webkit-transform:rotateY(0deg);}
+    	to {-webkit-transform:rotateY(360deg);}
+    }
+
+    @-ms-keyframes flipdiv/* Internet Explorer */
+    {
+    	from {-ms-transform:rotateY(0deg);}
+    	to {-ms-transform:rotateY(360deg);}
+    }
+
+#xenioo-chat-widget-button{
+    background-color: rgb(58, 100, 150) !important;
+    background-image: url(https://app02.xenioo.com/webchatsrc/xenioo-avatar-tran.png)  !important;
+    border-radius: 4px !important;
+    border:1px solid #4a9bdf;
+
+    animation:flipdiv3s infinite;
+    -moz-animation:flipdiv 3s infinite;
+    -moz-animation-timing-function:linear;
+    -webkit-animation:flipdiv 3s infinite;
+    -webkit-animation-timing-function:linear;
+
+}
+
+#xenioo-chat-widget-counter{
+	display:none;
+}
+
+.x-button {
+	width: 139%;
+	border: solid 1px #77181d  !important;
+	background-color: #fc5b62  !important;
+	color: #fff  !important;
+box-shadow:none !important;
+}
+
+#xenioo-conversation{
+	box-shadow:none !important;
+	background: linear-gradient(0deg, #f9f9f9, transparent);
+}
+
+#xenioo-chat-widget-button{
+	
+}
+
+#xenioo-conversation{
+	max-height:100%
+}
+
+#xenioo-conversation-header{
+    display:none !important;
+}
+
+#xenioo-conversation-body{
+	background-color: unset !important;
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: column;
+}
+
+.x-bubble-text{
+	box-shadow: 0 4px 18px 0 rgba(0,0,0,.69)
+}
+
+.x-bubble-text{
+	box-shadow: 0 4px 18px 0 rgba(0,0,0,.69)
+}
+
+.u-bubble-text{
+	box-shadow: 0 4px 18px 0 rgba(0,0,0,.69);
+	background-color: #013f62 !important;
+}
+
+.x-image-element{
+	box-shadow: 0 4px 18px 0 rgba(0,0,0,.69);
+}
+
+.x-button {
+	box-shadow: 0 4px 18px 0 rgba(0,0,0,.69);
+}
+
+.x-message-time{
+	display:none;
+}
+
+#xenioo-conversation .xenioo-conversation-composer .xenioo-conversation-composer-textarea .xenioo-conversation-textarea input, #xenioo-conversation .xenioo-conversation-composer .xenioo-conversation-composer-textarea .xenioo-conversation-textarea textarea, #xenioo-conversation .xenioo-conversation-composer .xenioo-conversation-composer-textarea .xenioo-conversation-textarea textarea:focus{
+    color: #fc5b62 !important;
+}
+
+.xenioo-conversation-composer{
+    background-color: transparent !important;
+    border: solid 1px #b0c0c1;
+    border-radius: 5px;
+    color: #fc5b62 !important;
+}
+
+#xenioo-user-chat-textarea-control{
+	color:#fc5b62 !important
+}
