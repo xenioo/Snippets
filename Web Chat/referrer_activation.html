@@ -4,12 +4,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
-<script src="https://static.xenioo.com/webchat/xenioowebchat.js"></script>
+<script data-id='xenioo' data-node='app' src="https://static.xenioo.com/webchat/xenioowebchat.js"></script>
 <script>
-    
-    if( document.referrer.indexOf( "CALLING_LINK_URL" ) )
-        Xenioo( "YOUR_CHATBOT_KEY" );
-        
+	if (document.referrer.indexOf("CALLING_LINK_URL"))
+        	xenioowebchat.Start("YOUR_CHATBOT_KEY" );
 </script>
 </body>
 </html>
