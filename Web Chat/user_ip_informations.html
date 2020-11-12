@@ -5,26 +5,21 @@
 </head>
 <body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://static.xenioo.com/webchat/xenioowebchat.js"></script>
+<script data-id='xenioo' data-node='app' src="https://static.xenioo.com/webchat/xenioowebchat.js"></script>
 <script>
-    
     $.getJSON('http://gd.geobytes.com/GetCityDetails?callback=?', function(data) {
       //debug to check data on console. Remove on deploy
       console.log(JSON.stringify(data, null, 2));
       
       //Once ths ip call is done, we call Xenioo initialization passing the data we've just retrieved.
-      Xenioo( "YOUR_CHATBOT_KEY",  {
+      xenioowebchat.Start( "YOUR_CHATBOT_KEY",  {
               variables:[  
-                  { Name: "ip_address", Value: data.geobytesipaddress }
-                  { Name: "country", Value: data.geobytescountry }
+                  { Name: "ip_address", Value: data.geobytesipaddress },
+                  { Name: "country", Value: data.geobytescountry },
                   { Name: "location", Value: data.geobytesfqcn }
               ]
-            });
-      
+            });      
     });
-    
-    
-    
 </script>
 </body>
 </html>
