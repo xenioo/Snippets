@@ -3,10 +3,10 @@
   <title>Xenioo Example</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
-<body>
-<script src="https://static.xenioo.com/webchat/xenioowebchat.js"></script>
+<body>  
+<script data-id='xenioo' data-node='app' src="https://static.xenioo.com/webchat/xenioowebchat.js"></script>
 <script>
-    Xenioo("YOUR_CHATBOT_KEY");
+    xenioowebchat.Start("YOUR_CHATBOT_KEY");
     
     function resetUserConversation() {
       document.cookie = 'xenioo-YOUR_CHATBOT_KEY=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
