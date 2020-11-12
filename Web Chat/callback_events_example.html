@@ -1,54 +1,55 @@
 <html>
 	<head>
-			<title>Xenioo - Callback Events</title>
-			<script src="https://static.xenioo.com/webchat/xenioowebchat.js"></script>
-			<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-			<style>
-			
-					body{
-						font-family: Arial, Verdana
-					}
-					
-					input{
-							background: #F0F0F0;
-							border: solid 1px #C0C0C0;
-							padding: 8px;
-							border-radius: 4px;
-							margin-top: 5px;
-					}
-					
-					#logdiv{
-					    width: 68%;
-							height: 84%;
-							background: #F0F0F0;
-							border: solid 1px #C0C0C0;
-							border-radius: 10px;
-							padding: 10px;
-							overflow-x: hidden;
-							overflow-y: auto;
-					}
-					
-					.titlespan{
-					    font-size: 29px;
-							font-weight: bold;
-							display: block;
-							margin-bottom: 14px;		
-					}
-					
-					.logentry{
-							display: block;
-							margin-bottom: 5px;
-							font-family: courier new;
-					}
-					
-			</style>
+		<title>Xenioo - Callback Events</title>
+		<script src="https://static.xenioo.com/webchat/xenioowebchat.js"></script>		
+		<script data-id='xenioo' data-node='app' src="https://static.xenioo.com/webchat/xenioowebchat.js"></script>		
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<style>
+
+				body{
+					font-family: Arial, Verdana
+				}
+
+				input{
+						background: #F0F0F0;
+						border: solid 1px #C0C0C0;
+						padding: 8px;
+						border-radius: 4px;
+						margin-top: 5px;
+				}
+
+				#logdiv{
+				    width: 68%;
+						height: 84%;
+						background: #F0F0F0;
+						border: solid 1px #C0C0C0;
+						border-radius: 10px;
+						padding: 10px;
+						overflow-x: hidden;
+						overflow-y: auto;
+				}
+
+				.titlespan{
+				    font-size: 29px;
+						font-weight: bold;
+						display: block;
+						margin-bottom: 14px;		
+				}
+
+				.logentry{
+						display: block;
+						margin-bottom: 5px;
+						font-family: courier new;
+				}
+
+		</style>
 	</head>
 	<body>
 		<div>
-				<span class='titlespan'>Events Log</span>
-				<div id="logdiv">
-							
-				</div>
+			<span class='titlespan'>Events Log</span>
+			<div id="logdiv">
+
+			</div>
 		<div>
 		<input type='button' onclick='xenioo.closeChat()' value='Close Chat'>
 		<input type='button' onclick='xenioo.openChat()' value='Open Chat'>
@@ -65,7 +66,7 @@
 	
 		<script>
 		
-				var xenioo = Xenioo("d07be17d-9be1-4f57-b220-af5559f61f8e", {
+				var xenioo = xenioowebchat.Start("d07be17d-9be1-4f57-b220-af5559f61f8e", {
 						onInit : function(){
 								log( "&#x1F525 Starting initialization." );
 						},
