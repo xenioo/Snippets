@@ -7,7 +7,7 @@ Web chat widget allows you to format any text coming out from any Content Action
 [See format specification](https://github.com/xenioo/Snippets/blob/master/Web%20Chat/Formatting%20text.md)
 
 # callback_events_example
-This example shows all of the different callback function you can attach to the Xenioo web chat object instance. You can access anything form basic chat objects to user interactions. You can see a [live demo here](https://www.xenioo.com/showcase/5/).
+This example shows all of the different callback function you can attach to the Xenioo web chat object instance. You can access anything form basic chat objects to user interactions. You can see a [live demo here](https://www.xenioo.com/showcase/events-log/).
 
 # initialize_with_variables
 This simple initialization file contains a small variation of the standard script that will initialize your chatbot conversation by injecting a variable. As the new conversation starts, the variable is automatically valued and can be used right away. If the injected variable does not exist, it will be created.  
